@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Victor Mono', monospace;
+}
+body p{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: #56559f;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 37em;
+}
+.Name{
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    height: 200px;
+    top: 58px;
+    left: 255px;
+}
+.Name h1{
+    font-size: 4em;
+    line-height: 2px;
+}
+.Name q{
+    display: inline-block;
+    margin-top: 35px;
+    width: 450px;
+    font-size: 2em;
+}
+
+.image{
+    margin-top: 104px;
+    margin-left: 95px;
+}
+.image img{
+    height: 487px;
+    width: 652px;
+    background-blend-mode: darken;
+}
+
+/* Company Logos */
+.company_logos ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.company_logos img{
+    width: 200px;
+    height: 100px;
+    background-blend-mode: darken;
+}
+
+/* Informaton */
+.Information{
+    margin: 0 96px;
+    height: 100px;
+    color: white;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr,1fr;
+    grid-template-areas:
+    'about achievements'
+    ;
+}
+
+.about{
+    grid-area: 'about';
+}
+.achievements{
+    grid-area: 'achievements'; 
+}
+.achievements ul li{
+    list-style-type: none;
+}
+.achievements ul li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
+  }
+.detail_card{
+    background-color: #56559f;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 2em;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Footer */
+footer{
+    margin-top: 316px;
+    text-align: center;
+    color: #56559f;
+}
+hr{
+    border-style: inset;
+    border-top-style: solid;
+    width: 87%;
+    border-color: #56559f;
+    border-width: 100%;
+}

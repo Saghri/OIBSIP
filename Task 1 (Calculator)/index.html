@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="screen" autofocus>
+        <button class="cal_btn left_brkt" value="(">&#40;</button>
+        <button class="cal_btn right_brkt" value=")">&#41;</button>
+        <button class="cal_btn ans" onclick="ans()">ans</button>
+        <button class="cal_btn del" onclick="backspc()">del</button>
+        <button class="cal_btn clear" onclick="screen.value=''">clear</button>
+        <button class="cal_btn seven num" value="7">7</button>
+        <button class="cal_btn eight num" value="8">8</button>
+        <button class="cal_btn nine num" value="9">9</button>
+        <button class="cal_btn percentage" onclick="percentage()">&#37;</button>
+        <button class="cal_btn under_root" onclick="sqrt()">&#8730;</button>
+        <button class="cal_btn four num" value="4">4</button>
+        <button class="cal_btn five num" value="5">5</button>
+        <button class="cal_btn six num" value="6">6</button>
+        <button class="cal_btn multiply" value="*">&#42;</button>
+        <button class="cal_btn divide" value="/">&#47;</button>
+        <button class="cal_btn one num" value="1">1</button>
+        <button class="cal_btn two num" value="2">2</button>
+        <button class="cal_btn three num" value="3">3</button>
+        <button class="cal_btn add" value="+">&#43;</button>
+        <button class="cal_btn subtract" value="-">&#45;</button>
+        <button class="cal_btn point" value=".">&#46;</button>
+        <button class="cal_btn zero num" value="0">0</button>
+        <button class="cal_btn nega_post" onclick="integer()">&#177;</button>
+        <button class="cal_btn Enter" onclick="calculate()">ENTER</button>
+    </div>
+    <p>&#169; Jamal U Din</p>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #0E2954 , #1F6E8C);
+}
+p{
+    color: white;
+}
+.container{
+    margin-top: 150px;
+    display: grid;
+    padding: 20px;
+    border: 2px solid hsla(206,100%,73.3%,1);
+    border-radius: 10px;
+    width: fit-content;
+    grid-gap: 1em;
+    text-align: center;
+    grid-template-areas: 
+    'output output output output output'
+    'leftBrkt rightBrkt ans del clear'
+    'seven eight nine percentage Root'
+    'four five six mult divide'
+    'one two three addition subtraction'
+    'point zeros integer enter enter'
+    ;
+    background-color: white;
+}
+.cal_btn{
+    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    background-color: hsla(206,100%,73.3%,1);
+    border-radius: 5px;
+    border: none;
+    color: rgb(16 103 172);
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.cal_btn:hover{
+    cursor: pointer;    
+    background-color: white;
+}
+
+.num{
+    background-color: hsl(206deg 100% 73.3% / 32%);
+    color: none;
+}
+
+#screen{
+    grid-area: output;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    background-color: hsl(206deg 100% 73.3% / 32%);
+    padding: 10px;
+    text-align: right;
+    font-size: 20px;
+    outline: none;
+}
+
+.left_brkt{
+    grid-area: leftBrkt;
+}
+.right_brkt{
+    grid-area: rightBrkt;
+}
+.ans{
+    grid-area: ans;
+}
+.del{
+    grid-area: del;
+    color: rgb(167, 20, 20);
+}
+.clear{
+    grid-area: clear;
+    color: red;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.percentage{
+    grid-area: percentage;
+}
+.under_root{
+    grid-area: Root;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.multiply{
+    grid-area: mult;
+}
+.divide{
+    grid-area: divide;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.add{
+    grid-area: addition;
+}
+.subtract{
+    grid-area: subtraction;
+}
+.point{
+    grid-area: point;
+}
+.zero{
+    grid-area: zeros;
+}
+.nega_post{
+    grid-area: integer;
+}
+.Enter{
+    grid-area: enter;
+    width: 115px;
+    color: green;
+}
